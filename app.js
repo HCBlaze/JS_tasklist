@@ -129,7 +129,7 @@ removeTaskFromLocalStorage = (taskItem) => {
 
 clearTasks = () =>{
     // One way
-    //taskList.innerHTML = ''
+    // taskList.innerHTML = ''
     // Other way
     while(taskList.firstChild){
         taskList.removeChild(taskList.firstChild)
@@ -149,7 +149,7 @@ filterTasks = (e) =>{
 
     document.querySelectorAll('.collection-item').forEach((task)=>{
         const item = task.firstChild.textContent
-        if(item.toLocaleLowerCase().indexOf(text) != -1){
+        if(item.toLowerCase().indexOf(text) != -1){
             task.style.display = 'block'
         } else {
             task.style.display = 'none'
