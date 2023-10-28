@@ -130,7 +130,6 @@ removeTaskFromLocalStorage = (taskItem) => {
 clearTasks = () =>{
     // One way
     // taskList.innerHTML = ''
-    // test new things
     // Other way
     while(taskList.firstChild){
         taskList.removeChild(taskList.firstChild)
